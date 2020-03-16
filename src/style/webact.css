@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EFF5FB;
+}
+.btn-block{
+    width: 300px;
+    margin-bottom: 5px;
+}
+a{
+    cursor: pointer;
+    border-bottom: 2px solid rgb(195, 194, 194);   
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 4px 5px;
+    margin: 4px 7px;
+}
+a:hover {
+    color:rgb(76, 160, 175);
+    border-bottom: 2px solid rgb(76, 160, 175);
+}
+a.active {
+    color: #2E64FE;
+    border-bottom: 2px solid rgb(76, 160, 175);
+}
+.inline-flex{
+    display: flex;
+    height: 23px;
+}
+.inline-flex:hover{
+  cursor: pointer;
+}
+.inline-flex:hover .span-url{
+    font-size: 13px;
+    font-weight: 650;
+}
+.inline-flex:hover .span-time{
+  color: rgb(0, 0, 0);
+}
+.span-url{
+    width: 320px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    cursor: pointer;
+}
+.span-visits{
+    width: 40px;
+    color: rgb(137, 154, 190);
+    font-size: 11px;
+}
+.visits{
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+.span-percentage{
+    color: rgb(78, 78, 78);
+    font-size: 11px;
+}
+.span-time{
+    color:#c5c3c3;
+    font-weight: 700;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 8px;
+}
+.span-time .span-active-time{
+  color: rgb(0, 0, 0);
+}
+.day-time .span-active-time{
+  color: rgb(0, 0, 0);
+}
+.margin-left-auto{
+  margin-left: auto;
+}
+.favicon{
+    margin:2px 7px 5px 3px;
+}
+.no-data{
+    width: 500px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+.table-header{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #283747;
+    text-decoration: underline;
+}
+p.table-header{
+    text-align: center;
+}
+  .margin-left-5{
+      margin-left: 5px;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  .tooltip .tooltiptext {
+    font-size: 11px;
+    font-weight: 500;
+    visibility: hidden;
+    width: 180px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    opacity: 0;
+  }
+  .visits.tooltip .tooltiptext{
+    width: 120px;
+    transform: translateX(-50%) translateY(-120%);
+  }
+  .current-url.tooltip .tooltiptext{
+    width: 120px;
+    transform: translateX(-50%) translateY(-120%);
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .block-img{
+      width: 17px;
+      height: 17px;
+      margin: 2px 7px 5px 3px;
+  }
