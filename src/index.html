@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Web Activity Time Tracker</title>
+   <link href="style/webact.css" rel="stylesheet" />
+   <link href="style/chart.css" rel="stylesheet" />
+   <script src="scripts/chart/d3.v4.min.js"></script>
+   <script src="scripts/chart/chart-core.js"></script>
+   <script src="scripts/storage.js"></script>
+   <script src="scripts/common.js"></script>
+   <script src="scripts/ui.js"></script>
+   <script src="scripts/webact.js"></script>
+</head>
+
+<body>
+   <svg class="height-0">
+      <filter id="dropShadow">
+         <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+         <feOffset dx="0" dy="1" />
+         <feMerge>
+            <feMergeNode />
+            <feMergeNode in="SourceGraphic" />
+         </feMerge>
+      </filter>
+   </svg>
+   <h3 style="text-align: center;margin-top: -12px;font-family: sans-serif;color: #2C4D70;font-weight: 800;">NO PURPOSELESS TOUR</h3>
+   <div class="btn-block">
+      <a class="active" id="btnToday">Today</a>
+      <a id="btnAll">All-time</a>
+   </div>
+   <div class="active" id="ChartBtn"></div>
+   <div id="chart"></div>
+   <div id="resTable" class="list-of-site"></div>
+
+</body>
+
+</html>
